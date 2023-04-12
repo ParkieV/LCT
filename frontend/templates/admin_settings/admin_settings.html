@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+  <link href="{{ url_for('static', path='admin_settings/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='admins_prof/css/admin_settings.css') }}">
+  <meta charset="utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-xl" aria-label="mainNavbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class = "logo" href="">
+              <img src="{{ url_for('static', path='admin_settings/img/logo2.svg') }}" class="d-inline-block align-text-center">
+              ГБУ.Недвижимость</a>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="p-2 bd-highlight">
+              <form action="{{ url_for('map') }}">
+                <button class="map">
+                  Карта
+                  <img src="{{ url_for('static', path='admin_settings/img/map.svg') }}">
+                </button>
+              </form>
+            </div>
+            <div class="p-2 bd-highlight">
+              <form action=>
+                <button class="chart">
+                  Оценка квартир
+                  <img src="{{ url_for('static', path='admin_settings/img/chart.svg') }}">
+                </button>
+              </form>
+            </div>
+            <div class="p-2 bd-highlight">
+              <form action="{{ url_for('profile', user_id=1234) }}">
+                <button class="user">
+                  Личный кабинет
+                  <img src="{{ url_for('static', path='admin_settings/img/user.svg') }}">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="d-flex flex-row bd-highlight">
+          <div class="bd-highlight">
+            <div class="d-flex flex-column bd-highlight">
+              <div class="bd-highlight">
+                <button class="profile">
+                  Профиль
+                </button>
+              </div>
+              <div class="bd-highlight">
+                <button class="favourites">
+                  Избранное
+                </button>
+              </div>
+              <div class="bd-highlight">
+                <div class="line"></div>
+              </div>
+              <div class="bd-highlight">
+                <button class="admin_settings">
+                  Настройки<br>администратора
+                </button>
+              </div>
+            </div>
+          </div>    
+          <div class="bd-highlight">
+            <div class="d-flex flex-column bd-highlight">
+              <div class="bd-highlight">
+                <div class="notifications">
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-row bd-highlight ">
+                      <div class="bd-highlight">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="bd-highlight">
+                        <div class="notifications_h">
+                          Уведомления о регистрации
+                        </div>
+                      </div>
+                      <div class="bd-highlight">
+                        <div class="up_arrow">
+                          <img src="{{ url_for('static', path='admin_settings/img/up_arrow.svg') }}">
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bd-highlight">
+                <div class="new_users">
+                  <div class="d-flex flex-column bd-highlight">
+                    <div class="bd-highlight">
+                      <div class="d-flex flex-row bd-highlight">
+                        <div class="bd-highlight">
+                          <div class="user_face">
+                            <img src="{{ url_for('static', path='admin_settings/img/user_face.svg') }}">
+                          </div>
+                        </div>
+                        <div class="bd-highlight">
+                          <div class="d-flex flex-column bd-highlight">
+                            <div class="bd-highlight">
+                              <div class="user_name">
+                                Иван Иванович Иванов
+                              </div>
+                            </div>
+                            <div class="bd-highlight">
+                              <div class="d-flex flex-row bd-highlight">
+                                <div class="bd-highlight">
+                                  <div class="id">
+                                    Рабочий id:
+                                  </div>
+                                </div>
+                                <div class="bd-highlight">
+                                  <div class="id_value">
+                                    m2203333
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bd-highlight">
+                          <button class="yes_button">
+                            <img src="{{ url_for('static', path='admin_settings/img/yes.svg') }}">
+                          </button>
+                        </div>
+                        <div class="bd-highlight">
+                          <button class="no_button">
+                            <img src="{{ url_for('static', path='admin_settings/img/no.svg') }}">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-top:60px" class="bd-highlight">
+                      <div class="d-flex flex-row bd-highlight">
+                        <div class="bd-highlight">
+                          <div class="user_face">
+                            <img src="../../static/admin_settings/img/user_face.svg">
+                          </div>
+                        </div>
+                        <div class="bd-highlight">
+                          <div class="d-flex flex-column bd-highlight">
+                            <div class="bd-highlight">
+                              <div class="user_name">
+                                Иван Иванович Иванов
+                              </div>
+                            </div>
+                            <div class="bd-highlight">
+                              <div class="d-flex flex-row bd-highlight">
+                                <div class="bd-highlight">
+                                  <div class="id">
+                                    Рабочий id:
+                                  </div>
+                                </div>
+                                <div class="bd-highlight">
+                                  <div class="id_value">
+                                    m2203333
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bd-highlight">
+                          <button class="yes_button">
+                            <img src="../../static/admin_settings/img/yes.svg">
+                          </button>
+                        </div>
+                        <div class="bd-highlight">
+                          <button class="no_button">
+                            <img src="../../static/admin_settings/img/no.svg">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column bd-highlight">
+                <div class="bd-highlight">
+                  <div class="search">
+                   <div class="d-flex flex-row bd-highlight">
+                     <div class="bd-highlight">
+                       <div class="search_h">
+                         Поиск пользователей
+                       </div>
+                     </div>
+                     <div class="ms-auto bd-highlight">
+                        <button class="search_btn">
+                          <img src="../../static/admin_settings/img/search.svg""{{ url_for('static', path='admin_settings/img/search.svg') }}">
+                        </button>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="bd-highlight">
+                  <div class="search_users">
+                  <div class="d-flex flex-column bd-highlight">
+                    <div class="bd-highlight">
+                      <div class="d-flex flex-row bd-highlight">
+                        <div class="bd-highlight">
+                          <div class="user_face">
+                            <img src="../../static/admin_settings/img/user_face.svg">
+                          </div>
+                        </div>
+                        <div class="bd-highlight">
+                          <div class="d-flex flex-column bd-highlight">
+                            <div class="bd-highlight">
+                              <div class="user_name">
+                                Иван Иванович Иванов
+                              </div>
+                            </div>
+                            <div class="bd-highlight">
+                              <div class="d-flex flex-row bd-highlight">
+                                <div class="bd-highlight">
+                                  <div class="id">
+                                    Рабочий id:
+                                  </div>
+                                </div>
+                                <div class="bd-highlight">
+                                  <div class="id_value">
+                                    m2203333
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-top:60px" class="bd-highlight">
+                      <div class="d-flex flex-row bd-highlight">
+                        <div class="bd-highlight">
+                          <div class="user_face">
+                            <img src="../../static/admin_settings/img/user_face.svg">
+                          </div>
+                        </div>
+                        <div class="bd-highlight">
+                          <div class="d-flex flex-column bd-highlight">
+                            <div class="bd-highlight">
+                              <div class="user_name">
+                                Иван Иванович Иванов
+                              </div>
+                            </div>
+                            <div class="bd-highlight">
+                              <div class="d-flex flex-row bd-highlight">
+                                <div class="bd-highlight">
+                                  <div class="id">
+                                    Рабочий id:
+                                  </div>
+                                </div>
+                                <div class="bd-highlight">
+                                  <div class="id_value">
+                                    m2203333
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>      
+        </div>
+        
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="d-flex flex-column bd-highlight mb-2">
+          <div class="d-flex flex-row bd-highlight mb-2">
+            <img class="logo_footer" src="../../static/admin_settings/img/logo_footer.svg">
+            <div class="brand_name">ГБУ.Недвижимость</div>
+          </div>
+          <div class="d-flex flex-row bd-highlight mb-4">
+            <img class="cat" src="../../static/admin_settings/img/cat.svg">
+            <img class="cat2" src="../../static/admin_settings/img/cat.svg">
+            <img class="cat2" src="../../static/admin_settings/img/cat.svg">
+            <img class="cat2" src="../../static/admin_settings/img/cat.svg">
+          </div>
+        </div>
+        <div style="margin-left:161px; margin-top:32px;" class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <div href="" class="information">
+              Информация
+            </div>
+          </div>
+          <div style="margin-top: 50px;" class="p-2 bd-highlight">
+            <a href=""  class="formula">
+              Формула рассчёта
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="about_us">
+              О нас
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="developers">
+              Разработчики
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-left:161px; margin-top:32px;" class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <div href="" class="contacts">
+              Контакты
+            </div>
+          </div>
+          <div style="margin-top: 50px;" class="p-2 bd-highlight">
+            <a href=""  class="email_footer">
+              GBU@info.ru
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="phone">
+              +8(916) 123-45-67
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="adress">
+              Москва, Сумской проезд 13к2
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+</body>
+</html>

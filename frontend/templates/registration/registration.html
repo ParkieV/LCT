@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+  <link href="{{ url_for('static', path='registration/css/bootstrap.css') }}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='registration/css/registration.css') }}">
+  <meta charset="utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+    <div class="container">
+      <div class="logo_brand">
+        <img class="logo" src="{{ url_for('static', path='registration/img/logo.svg') }}"></img>
+        <a class="brand" href="">ГБУ.Недвижимость</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xs-5 col-sm-5 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <form name="forma">
+        <input class="name_input" type="text"  name="name" required = "required" placeholder="ФИО">
+      </div>
+    </div>  
+    </div>
+
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xs-5 col-sm-5 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <form name="forma">
+        <input class="email_input" type="text"  name="email" required = "required" placeholder="Email">
+      </div>
+    </div>  
+    </div>
+
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xs-5 col-sm-5 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <form name="forma">
+        <input class="phone_number_input" type="text"  name="name" required = "required" placeholder="Номер телефона">
+      </div>
+    </div>  
+    </div>
+
+
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xs-5 col-sm-5 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <form name="forma">
+        <input class="number_input" type="text"  name="name" required = "required" placeholder="Личный номер работника">
+      </div>
+    </div>  
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xs-5 col-sm-5 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <div class="d-flex bd-highlight mb-2">
+            <div class="me-auto p-2 bd-highlight">
+              <input type="checkbox" value="" id="checkbox">
+              <label class="form-check-label" for="checkbox">
+              Я принимаю <span>какую-нибудь херню</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="d-flex justify-content-center">
+            <button class="sigh_up">Регистрация</button></div>
+        </div>  
+      </div>
+    </div>
+
+
+    <section style="height: 200px"></section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', path='registration/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

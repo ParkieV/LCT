@@ -1,0 +1,78 @@
+class first_task
+{
+    static public List<int> Input()
+    {
+        List<int> list = new List<int>();
+        Console.WriteLine("Ввод чисел в массив, для выхода введите 'end'.");
+        while (true)
+        {
+            Console.Write("Введите число: ");
+            var value = Console.ReadLine();
+            if (value == "end" || value == null)
+            {
+                break;
+            }
+            else
+            {
+                list.Add(int.Parse(value));
+            }
+        }
+        return list;
+    } 
+    static public void OutputMassive(List<int> list)
+    {
+        Console.WriteLine("Вывод элементов массива:");
+        for (int i = 0; i < list.Count - 1; i++)
+        {
+            Console.Write($"{list[i]} ");
+        }
+        Console.WriteLine(list[list.Count - 1]);
+    }
+
+    static public void FindMaxMin(List<int> list)
+    {
+        List<int> minEl = new List<int> { list[0], 0 }, maxEl = new List<int> { list[0], 0 };
+        for (int i = 1; i < list.Count; i++)
+        {
+            if (list[i] < minEl[0])
+            {
+                minEl[0] = list[i];
+                minEl[1] = i;
+            }
+            if (list[i] > maxEl[0])
+            {
+                maxEl[0] = list[i];
+                maxEl[1] = i;
+            }
+        }
+        Console.WriteLine($"Минимальный элемент: {minEl[0]}\nНаходится на {minEl[1]} месте.");
+        Console.WriteLine($"Максимальный элемент: {maxEl[0]}\nНаходится на {maxEl[1]} месте.");
+    }
+
+    static void Main(string[] args)
+    {
+        List<int> num_mas = Input();
+        OutputMassive(num_mas);
+        FindMaxMin(num_mas);
+        Console.Write("Выберите режим работы приложения (Режим 1 - 'a', режим 2 - 'b'): ");
+        var choose = Console.ReadLine();
+        if ((choose != "a" & choose != "b") || choose == null)
+        {
+            Console.Write("Некорректный ввод, попробуйте снова: ");
+            choose = Console.ReadLine();
+        }
+        else
+        {
+            if (choose == "a")
+            {
+                // 1 point
+            }
+            else
+            {
+                // 2 point
+            }
+            break;
+        }
+        }
+    }
+}

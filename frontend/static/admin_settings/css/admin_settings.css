@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+	background: #EBE4E3;
+}
+a {
+	text-decoration: none;
+}
+
+nav {
+	height: 96px;
+	background: #F19972;
+}
+
+.logo {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(5px + 45*(100vw / 1440));
+	line-height: 72px;
+	color: #2D3042;
+}
+
+.logo:hover {
+	color: #2D3042;
+}
+
+
+
+.map {
+	background: #F8F2F2;
+	border-radius: 25px;
+	height: 39px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: none;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(2px + 20*(100vw / 1440));
+	line-height: 29px;
+	color: #2D3042;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.map:hover {
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1s ease;
+}
+
+.chart {
+	background: #F8F2F2;
+	border-radius: 25px;
+	height: 39px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border: none;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(5px + 20*(100vw / 1440));
+	line-height: 29px;
+	color: #2D3042;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.chart:hover {
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1s ease;
+}
+
+.user {
+	background: #F8F2F2;
+	border-radius: 25px;
+	height: 39px;
+	padding-left: 27px;
+	padding-right: 27px;
+	border: none;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(5px + 20*(100vw / 1440));
+	line-height: 29px;
+	color: #2D3042;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.user:hover {
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1 easy;
+}
+
+.profile {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	display: flex;
+	align-items: center;
+	color: #2D3042;
+	border: none;
+	background: #EBE4E3;
+	margin-top: 63px;
+	margin-left: 58px;
+
+}
+
+.favourites {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	display: flex;
+	align-items: center;
+	color: #2D3042;
+	border: none;
+	background: #EBE4E3;
+	margin-top: 52px;
+	margin-left: 58px;
+}
+
+.line {
+	background: #2D3042;
+	border: 2px solid #2D3042;
+	width: 272px;
+	margin-top: 46px;
+	margin-left: 31px;
+}
+.admin_settings {
+	background: #F19972;
+	border-radius: 20px;
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	padding: 9px 27px 9px 27px;
+	border: none;
+	margin-top: 49px;
+	margin-left: 31px;
+}
+
+
+.notifications {
+	background: #F8F2F2;
+	border-radius: 20px;
+	width: Hug 803px;
+	height: 63px;
+	margin-top: 57px;
+	margin-left: 80px;
+}
+
+.circle {
+	background: #F19972;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px 20px 20px 20px;
+	margin-top: 21.5px;
+}
+
+.up_arrow {
+	margin-top: 20px;
+	margin-left: 22px;
+}
+
+.notifications_h {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 58px;
+	color: #2D3042;
+	margin-left: 12px;
+}
+
+.new_users {
+	margin-top: 16px;
+	background: #F8F2F2;
+	border-radius: 20px;
+	width: width: Hug 803px;;
+	padding: 40px 106px 40px 106px;
+	margin-left: 80px;
+}
+
+.user_name {
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 35px;
+	color: #2D3042;
+	margin-left: 24px;
+	margin-top: 10px;
+
+}
+
+.id {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 145%;
+	color: #2D3042;
+	margin-left: 24px;
+}
+
+.id_value {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 29px;
+	color: #2D3042;
+	margin-left: 10px;
+}
+
+.yes_button {
+	border: none;
+	background: #F8F2F2;
+	margin-left: 24px;
+	margin-top: 10px;
+}
+
+
+.no_button {
+	border: none;
+	background: #F8F2F2;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.search {
+	width: Hug 803px;
+	background: #F8F2F2;
+	border-radius: 20px;
+	margin-left: 80px;
+	margin-top: 100px;
+}
+
+.search_h {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 58px;
+	color: #2D3042;
+	margin-left: 34px;
+}
+
+.search_btn {
+	border: none;
+	background: #F8F2F2;
+	margin-right: 14px;
+	margin-top: 13px;
+}
+
+.search_users {
+	background: #F8F2F2;
+	border-radius: 20px;
+	padding: 42px 149px 42px 149px;
+	margin-top: 16px;
+	width: Hug 803px;
+	margin-left: 80px;
+}
+
+.footer {
+	background: #2D3042;
+	width: 100%;
+	height: 295px;
+	margin-top: 867px;
+}
+
+.logo_footer {
+	margin-left: 76px;
+	margin-top: 32px;
+}
+
+
+.brand_name {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 58px;
+	color: #4F5D74;
+	margin-top: 34px;
+}
+
+
+.cat {
+	margin-left: 79px;
+	margin-right: 17px;
+	margin-top: 123px;
+}
+
+.cat2 {
+	margin-right: 17px;
+	margin-top: 123px;
+}
+
+.information {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 42px;
+	color: #4F5D74;
+}
+
+.formula {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.about_us {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;s
+}
+
+.developers {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.contacts {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 42px;
+	color: #4F5D74;
+}
+
+.email_footer {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.phone {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.adress {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}

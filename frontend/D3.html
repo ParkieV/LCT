@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/D3/D3.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_text">Мос.Недвижимость</div>
+        <div class="search">
+            <div class="seacrh_icon"></div>
+            <div class="search_space"></div>
+            
+        </div>
+        <div class="menu"></div>
+    </div>
+
+    <div class="main">
+        <div class="mian_filter">
+            <div class="Title">Избранное</div> 
+            <div class="filter">
+                <div class="filter_text first">Сначала дороже</div>
+                <!-- <div class="filter_icons"></div> -->
+                <div class="drop_filter end" hidden>
+                    <div class="filter_text start">Сначала дороже</div>
+                    <div class="filter_text">Сначала новые</div>
+                    <div class="filter_text">Сначала старые</div>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="cards_list">
+           
+        </div>
+    </div>
+
+
+<script>
+    var articleDiv = document.querySelector("div.filter");
+    document.querySelector('.filter').onclick=function(){
+        document.querySelector('.drop_filter').hidden=!document.querySelector('.drop_filter').hidden;
+        
+        articleDiv.classList.add("choise");
+    
+    }
+
+
+
+
+
+    let price=[1.2, 2.5, 1.7, 3.1]
+    let address=['Сумской проезд 13к2 кв 77', 'Балаклавский проспект 6А кв 4', 'Ленинская улица 15к7 кв 37', 'Лермонтовская улица 49 кв 57']
+    let card_num=prompt("Num of card",1)
+    let small_text=`2-комн., 39,3 м2, 6/22 этаж\nТип: “Хрущевка”\nГод застройки: 1980 год`
+    
+
+
+    let div=document.createElement('div')
+    div.className='card'
+    for(let i=0; i<card_num;i++){
+        
+           document.querySelector('.cards_list').append(div) 
+        cardHTML=`
+        
+        <div class="cards">
+                <div class="image"></div>
+                <div class="all">
+                    <div class="mainCard_text">
+                        <div class="card_price">${price[i]} млн рублей</div>
+                        <div class="card_texts">
+                            ${small_text}
+                        </div>
+                    </div>
+                    <div class="add">
+                        <div class="add_text"> ${address[i]} </div>
+                        <div class="icons">
+                            <div class="icon"></div>
+                            <div class="icon"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+                    `
+        div.innerHTML+=cardHTML
+        console.log(div);
+        
+        
+        
+    }
+    
+    
+</script>
+</body>
+</html>

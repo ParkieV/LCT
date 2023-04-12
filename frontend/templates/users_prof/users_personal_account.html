@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+  <link href="{{ url_for('static', path='users_prof/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='users_prof/css/user.css') }}">
+  <meta charset="utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-xl" aria-label="mainNavbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class = "logo" href="">
+              <img src="{{ url_for('static', path='users_prof/img/logo2.svg') }}" class="d-inline-block align-text-center">
+              ГБУ.Недвижимость</a>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="p-2 bd-highlight">
+              <form action="{{ url_for('map') }}">
+                <button class="map">
+                  Карта
+                  <img src="{{ url_for('static', path='map/img/map.svg') }}">
+                </button>
+              </form>
+            </div>
+            <div class="p-2 bd-highlight">
+              <form action=>
+                <button class="chart">
+                  Оценка квартир
+                  <img src="{{ url_for('static', path='map/img/chart.svg') }}">
+                </button>
+              </form>
+            </div>
+            <div class="p-2 bd-highlight">
+              <form action="{{ url_for('profile', user_id=1234) }}">
+                <button class="user">
+                  Личный кабинет
+                  <img src="{{ url_for('static', path='map/img/user.svg') }}">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="all_user_information">
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+              <button class="profile">
+                Профиль
+              </button>
+            </div>
+
+            <div class="p-2 bd-highlight">
+              <button class="favourites">
+                Избранное
+              </button>
+            </div>
+          </div>
+        
+        <div class="user_information">
+          <button class="face">
+            <img src="{{ url_for('static', path='users_prof/img/user2.svg') }}">
+          </button>
+        </div>
+
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="user_name">
+                Иван Иванович Иванов 
+              </div>
+            <button class="settings">
+              <img src="{{ url_for('static', path='users_prof/img/settings.svg') }}">
+            </button>
+          </div>
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="user_type">
+              Пользователь
+            </div>
+          </div>
+
+          <div class="p-2 bd-highlight">
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="email">
+                Почта:
+              </div>
+              <div class="email_value">
+                egor.shmanev@gmail.com
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bd-highlight">
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="number">
+                Телефон:
+              </div>
+              <div class="number_value">
+                8 (916) 123-45-67
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bd-highlight">
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="id">
+                Рабочий ID:
+              </div>
+              <div class="id_value">
+                m2203333
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="d-flex flex-column bd-highlight mb-2">
+          <div class="d-flex flex-row bd-highlight mb-2">
+            <img class="logo_footer" src="{{ url_for('static', path='users_prof/img/logo_footer.svg') }}">
+            <div class="brand_name">ГБУ.Недвижимость</div>
+          </div>
+          <div class="d-flex flex-row bd-highlight mb-4">
+            <img class="cat" src="{{ url_for('static', path='users_prof/img/cat.svg') }}">
+            <img class="cat2" src="{{ url_for('static', path='users_prof/img/cat.svg') }}">
+            <img class="cat2" src="{{ url_for('static', path='users_prof/img/cat.svg') }}">
+            <img class="cat2" src="{{ url_for('static', path='users_prof/img/cat.svg') }}">
+          </div>
+        </div>
+        <div style="margin-left:161px; margin-top:32px;" class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <div href="" class="information">
+              Информация
+            </div>
+          </div>
+          <div style="margin-top: 50px;" class="p-2 bd-highlight">
+            <a href=""  class="formula">
+              Формула рассчёта
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="about_us">
+              О нас
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="developers">
+              Разработчики
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-left:161px; margin-top:32px;" class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <div href="" class="contacts">
+              Контакты
+            </div>
+          </div>
+          <div style="margin-top: 50px;" class="p-2 bd-highlight">
+            <a href=""  class="email_footer">
+              GBU@info.ru
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="phone">
+              +8(916) 123-45-67
+            </a>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="" class="adress">
+              Москва, Сумской проезд 13к2
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
+</body>
+</html>

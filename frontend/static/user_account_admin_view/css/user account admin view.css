@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+	background: #EBE4E3;
+}
+a {
+	text-decoration: none;
+}
+
+nav {
+	height: 96px;
+	background: #F19972;
+}
+
+button {
+	border: none;
+}
+
+.logo {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(5px + 45*(100vw / 1440));
+	line-height: 72px;
+	color: #2D3042;
+}
+
+.logo:hover {
+	color: #2D3042;
+}
+
+
+
+.map {
+	background: #F8F2F2;
+	border-radius: 25px;
+	height: 39px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: none;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(2px + 20*(100vw / 1440));
+	line-height: 29px;
+	color: #2D3042;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.map:hover {
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1s ease;
+}
+
+.chart {
+	background: #F8F2F2;
+	border-radius: 25px;
+	height: 39px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border: none;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(5px + 20*(100vw / 1440));
+	line-height: 29px;
+	color: #2D3042;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.chart:hover {
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1s ease;
+}
+
+.user {
+	background: #F8F2F2;
+	border-radius: 25px;
+	height: 39px;
+	padding-left: 27px;
+	padding-right: 27px;
+	border: none;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(5px + 20*(100vw / 1440));
+	line-height: 29px;
+	color: #2D3042;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.user:hover {
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1 easy;
+}
+
+.all_user_information {
+	margin-top: 100px;
+	margin-left: 24px;
+	
+}
+
+.profile {
+	max-width: 215px;
+	padding-left: 27px;
+	padding-right: 27px;
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 58px;
+	height: 58px;
+	background: #F19972;
+	border-radius: 20px;
+	border: none;
+
+}
+
+.favourites {
+	max-width: 215px;
+	padding-left: 27px;
+	padding-right: 27px;
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 58px;
+	height: 58px;
+	background: #EBE4E3;
+	border: none;
+	margin-top: 45px;
+
+}
+
+.line {
+	background: #2D3042;
+	border: 2px solid #2D3042;
+	width: 272px;
+	margin-top: 25px;
+}
+.admin_settings {
+	max-width: 215px;
+	padding-left: 27px;
+	padding-right: 27px;
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 58px;
+	height: 58px;
+	background: #EBE4E3;
+	border: none;
+	margin-top: 45px;
+	}
+.face {
+	width: 166px;
+	height: 166px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 166px;
+	background: #F8F2F2;
+	border: none;
+}
+
+.user_information {
+	margin-left: 98px;
+}
+
+.user_name {
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+	color: #2D3042;
+	margin-left: 39px;
+	margin-top: 21px;
+}
+
+.settings {
+	border: none;
+	margin-left: 40px;
+	background: #F8F2F2;
+	margin-top: 50px;
+}
+
+.settings:hover{
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+	transition: 0.1 easy;
+}
+
+
+.user_type {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 43px;
+	color: #4F5D74;
+	margin-left: 39px;
+	margin-top: 8px;
+}
+
+.email {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	margin-left: 39px;
+	margin-top: 40px;
+}
+
+.email_value {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+
+.number {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	margin-left: 39px;
+	margin-top: 32px;
+}
+
+.number_value {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	margin-left: 10px;
+	margin-top: 32px;
+}
+
+.id {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	margin-left: 39px;
+	margin-top: 32px;
+}
+
+.id_value {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	margin-left: 10px;
+	margin-top: 32px;
+}
+
+
+
+.footer {
+	background: #2D3042;
+	width: 100%;
+	height: 295px;
+	margin-top: 867px;
+}
+
+.logo_footer {
+	margin-left: 76px;
+	margin-top: 32px;
+}
+
+
+.brand_name {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 58px;
+	color: #4F5D74;
+	margin-top: 34px;
+}
+
+
+.cat {
+	margin-left: 79px;
+	margin-right: 17px;
+	margin-top: 123px;
+}
+
+.cat2 {
+	margin-right: 17px;
+	margin-top: 123px;
+}
+
+.information {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 42px;
+	color: #4F5D74;
+}
+
+.formula {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.about_us {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;s
+}
+
+.developers {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.contacts {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 42px;
+	color: #4F5D74;
+}
+
+.email_footer {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.phone {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+.adress {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 28px;
+	color: #4F5D74;
+}
+
+
+.admin_information {
+	background: #F8F2F2;
+	border-radius: 20px;
+	padding: 33px 40px 67px 38px;
+	margin-left: 193px;
+	margin-right: 70px;
+}
+
+.files {
+	background: #F8F2F2;
+	border-radius: 20px;
+	width: 852px;
+	margin-left: 202px;
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 58px;
+	color: #2D3042;
+	margin-top: 39px;
+	padding-left: 44px;
+}
+
+.all_files {
+	background: #F8F2F2;
+	border-radius: 20px;
+	width: 852px;
+	margin-left: 202px;
+	padding: 73px 35px 31px 35px;
+	margin-top: 16px;
+}
+
+
+.add_file_block {
+	padding: 6px 103px 45px 103px;
+	background: rgba(235, 228, 227, 0.4);
+	border: 1px dashed #4F5D74;
+	border-radius: 10px;
+	margin-top: 27px;
+
+}
+
+
+.h_add_file {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	color: #2D3042;
+	font-family: 'Jost';
+
+}
+
+.add_file_here {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	color: rgba(25, 26, 34, 0.68);
+}
+
+.file_extension {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	color: rgba(25, 26, 34, 0.68);
+	margin-top: 15.86%;
+}
+
+.add_file_btn {
+	background: #F19972;
+	border-radius: 10px 0px 0px 10px;
+	padding-top: 10.5px;
+	padding-bottom: 10.5px;
+	padding-left: 55px;
+	padding-right: 55px;
+}
+
+.disk_btn {
+	background: #F19972;
+	border-width: 0px 1px;
+	border-style: solid;
+	border-color: #2D3042;
+	border-radius: 0px;
+	padding-left: 29px;
+	padding-right: 29px;
+}
+
+.dropbox_btn {
+	background: #F19972;
+	border-radius: 0px 10px 10px 0px;
+	padding-left: 29px;
+	padding-right: 29px;
+}
+
+
+.line {
+	border: 1.5px solid #4F5D74;
+	margin-right: 35px;
+	margin-top: 40px;
+	width: 782px;
+
+}
+
+
+.file{
+	margin-top: 27px;
+}
+
+.file_name {
+	font-family: 'Jost';
+	font-stySle: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 36px;
+	color: #2D3042;
+}
+

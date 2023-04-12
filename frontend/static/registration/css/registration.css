@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+body {
+	background: #2D3042;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.brand {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(5px + 75*(100vw / 1440));
+	line-height: 144px;
+	color: #F19972;
+	text-decoration: none;
+    margin-top: 99px;
+}
+
+.brand:hover{
+	color: #F19972;
+}
+
+
+.logo_brand {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+	margin-top: 99px;
+	max-width: 220px;
+	height: auto;
+	width: 100%;
+  	
+}
+
+input {
+	width: 100%;
+	background-color: #F8F2F2;
+	border-radius: 100px;
+	height: 64px;
+	padding-left: 20px;
+}
+
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.4s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.4s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.4s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.4s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.4s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.4s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.4s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.4s ease;}
+
+
+
+input::-webkit-input-placeholder {
+	color: #4F5D74;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+
+}
+input::-moz-placeholder{
+	color: #4F5D74;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+
+}
+input:-moz-placeholder{
+	color: #4F5D74;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+
+}
+input:-ms-input-placeholder{
+	color: #4F5D74;
+	font-family: 'Tenor Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+}
+
+
+.name_input {
+	margin-top: 98px;
+	background-image: url(../../media/img/name_img.svg);
+	background-repeat: no-repeat;
+	background-position: 97%;
+}
+
+.name_input:focus{
+	background-image: none;
+	transition: opacity 0.4s ease;
+
+}
+
+
+
+.email_input {
+	margin-top: 16px;
+	background-image: url(../../media/img/email_img.svg);
+	background-repeat: no-repeat;
+	background-position: 97%;
+}
+
+.email_input:focus{
+	background-image: none;
+	transition: opacity 0.4s ease;
+
+}
+
+
+.phone_number_input {
+	margin-top: 16px;
+	background-image: url(../../media/img/phone_number_img.svg);
+	background-repeat: no-repeat;
+	background-position: 97%;
+}
+
+.phone_number_input:focus{
+	background-image: none;
+	transition: opacity 0.4s ease;
+
+}
+
+
+
+.number_input {
+	margin-top: 16px;
+	background-image: url(../../media/img/number_img.svg);
+	background-repeat: no-repeat;
+	background-position: 97%;
+}
+
+.number_input:focus{
+	background-image: none;
+	transition: opacity 0.4s ease;
+
+}
+
+
+
+label {
+	
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: rgba(248, 242, 242, 0.74);
+}
+
+label>span {
+	color: #F19972;;
+}
+
+#checkbox {
+	background: #F8F2F2;
+	width: 16px;
+	height: 16px;
+	margin-top: 18px;	
+
+}
+
+
+#checkbox:checked+label::before {
+               color: #F19972;
+}
+
+
+
+
+
+.sigh_up {
+	width: 75%;
+	background: #F19972;
+	border-radius: 200px;
+	height: 77px;
+	border: none;
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 43px;
+	color: #F8F2F2;
+	margin-top: 58px;
+}
